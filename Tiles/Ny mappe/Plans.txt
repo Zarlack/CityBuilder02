@@ -1,0 +1,7 @@
+1. Generate a map with only water tiles of XxY (example 90 x 90)
+2. With good spacing generate a few random grass tiles or other biomes in the world
+3. All the non-water tiles starts copying itself outward from the center for X tiles (example 3 tiles)
+4. Continuing to expand but with decreasing chance from X where X is center tile position of island created in 2. (example 100% - (10 * Y) where Y is distance from island created in 3.
+5. Place a few random trees untill X% of the island size is trees except for the center on the start island
+6. Give the tree a chance to spread in every direction as far as the tile is a ground tile where trees can grow
+7. Place the start house in the middle of the start island

@@ -1,0 +1,54 @@
+CREATING NEW BACKGROUND TILE
+- Open the tile image in GIMP
+- Make sure the tile image is (48*7)x(48*7) or 336x336
+- Make the image in itself 340x340
+- Make a layer behind the tile layer where you use BACKGROUND IMAGE
+- Export as png
+
+CREATING NEW BUTTON GRAPHIC
+- Open the image in GIMP
+- Make sure the image is 32x32
+- Export as png
+
+ADDING BACKGROUND TILE TO UNITY
+- Drag tile image to Tiles folder
+- Set Pixels Per Unit to 200
+- Set Pivot Point to Top Left
+- Apply
+- Drag tile image from Tiles folder to Hierarchy
+- Change Orer in Layer to -1
+- Add Component - Tile Script
+- Add Component - Box Collider 2D
+- Set Is Trigger under Box Collider 2D
+- Drag to the Prefabs folder
+- Go to LevelManager
+- Add +1 to Size
+- Drag the tile prefab from the Prefab folder to the new Element space
+
+ADDING NEW HOUSE BUTTON
+- Drag house icon to Icons - Building Buttons
+- Duplicate a button already existing under Canvas - Building Panel
+- Drag the button icon into Image - Source Image
+- Add Component - Building Button
+- Under On Click() press the + sign
+- Drag the Game Manager in the None (Object)
+- Click the No Function - GameManager - PickBuilding
+- Drag the current button to the None (Building Button)
+- Drag the coresponding house sprite prefab in Sprites - Buildings to the Building Button - Building Prefab
+
+
+TILES:
+0 - Deep Water
+1 - Shallow Water
+2 - Fresh Water
+3 - Grass Ground
+4 - Dirt Ground
+5 - Sand Ground
+6 - Snow Ground
+
+
+Bresenham's line algorithm
+
+y = mx + b
+
+deepWater, shallowWater, grassLand, side, corner
